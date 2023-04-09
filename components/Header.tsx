@@ -2,7 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 
 export default function Header() {
   return (
-    <div>
+    <div class="px-8 py-2 pt-8 mx-auto rounded-t-lg max-w-screen-md">
       <Head>
         <title>Weather App</title>
       </Head>
@@ -12,7 +12,7 @@ export default function Header() {
         class="mx-auto"
         alt="weather"
       />
-      <p class="my-10 text(enter 3xl black)">
+      <p class="pt-4 pl-2 text-3xl text-gray-900 dark:text-white">
         Weather App!
       </p>
     </div>
