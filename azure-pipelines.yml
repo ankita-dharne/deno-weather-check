@@ -6,9 +6,14 @@
 trigger:
 - main
 
+variables:
+  DENO_VERSION: "v1.32.3"
+  TS_VERSION: "5.0.3"
+  
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: deno task start
-  displayName: 'Building the application'
+  - bash: curl -L https://deno.land/x/install/install.sh | sh -s $(DENO_VERSION)
+  - bash: echo '##vso[task.prependpath]$(HOME)/.deno/bin/'
+  - script: $(HOME)/.deno/bin/deno run --allow-all test.ts
