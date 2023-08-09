@@ -1,6 +1,4 @@
-import { PageProps } from "https://deno.land/x/fresh@1.1.5/server.ts";
 import CreateSubmit from "../islands/Submit.tsx";
-import WeatherResp from "../data/interface.ts";
 import Header from "../components/Header.tsx";
 
 export default function Home() {

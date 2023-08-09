@@ -1,7 +1,7 @@
 import { Handlers } from "$fresh/server.ts";
 import { json, ReqWithBody } from 'https://deno.land/x/parsec@0.1.1/mod.ts';
 import { getWeather } from "https://deno.land/x/deno_weather@v0.1.9/mod.ts";
-import WeatherResp from "../../data/interface.ts";
+import WeatherResp from "../../data/Interface.ts";
 
 export const handler: Handlers <WeatherResp | null> = {
     async POST(_req, _ctx) {
