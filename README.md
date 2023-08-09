@@ -13,6 +13,9 @@ deno task start
 
 This will watch the project directory and restart as necessary.
 
+Tech Demo Video: https://drive.google.com/file/d/1DA3k-68EK7hrH7keQFw2vOaK0ltczqNR/view?usp=sharing
+Prod URL: https://able-parrot-90.deno.dev/
+
 ### References Links
 
 [Fresh](https://deno.land/manual@v1.32.3/getting_started/installations)
